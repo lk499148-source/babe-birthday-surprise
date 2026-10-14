@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ff477e">
+<title>For My Babe ❤️</title>
+<style>
+:root{--pink:#ff477e;--deep:#6b1637;--cream:#fff7f9;--gold:#ffd166}
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,'Times New Roman',serif;color:#42152a;background:radial-gradient(circle at top,#ffe0eb,#fff8fa 55%,#ffe9f0);overflow-x:hidden}
+.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:28px 18px;position:relative}
+.card{width:min(720px,100%);background:rgba(255,255,255,.88);border:1px solid #ffc2d4;border-radius:28px;padding:clamp(24px,5vw,48px);box-shadow:0 18px 55px #b52d5b20;position:relative;z-index:1}
+.eyebrow{letter-spacing:3px;text-transform:uppercase;font:700 11px Arial,sans-serif;color:var(--pink)}
+h1{font-size:clamp(2.6rem,10vw,5rem);line-height:.98;margin:16px 0;color:var(--deep)}
+h2{color:var(--deep);font-size:clamp(1.6rem,5vw,2.2rem)}
+p{font-size:1.08rem;line-height:1.8}
+button{border:0;border-radius:999px;padding:14px 22px;background:var(--pink);color:white;font-size:1rem;font-weight:bold;cursor:pointer;box-shadow:0 8px 20px #ff477e40}
+button:focus{outline:3px solid var(--gold)}
+.hidden{display:none}
+.section{padding:26px 0;border-top:1px solid #ffd4e0;margin-top:26px}
+.heart{font-size:2rem;animation:pulse 1.5s infinite}
+@keyframes pulse{50%{transform:scale(1.18)}}
+.spark{position:fixed;pointer-events:none;z-index:0;animation:float 7s linear infinite;opacity:.65}
+@keyframes float{from{transform:translateY(110vh) rotate(0deg)}to{transform:translateY(-15vh) rotate(360deg)}}
+.countdown{display:inline-flex;align-items:center;justify-content:center;gap:10px;margin:10px auto 16px;padding:12px 18px;border-radius:18px;background:#fff0f5;border:1px solid #ffc2d4;font-family:Arial,sans-serif;color:var(--deep)}
+.countdown strong{font-size:2rem;color:var(--pink)}
+.countdown span{font-size:.9rem;max-width:180px;text-align:left;line-height:1.35}
+.track{margin:24px auto 8px;max-width:390px;height:5px;background:#ffd0de;border-radius:99px;position:relative}
+.track:before{content:"";position:absolute;left:0;top:-4px;width:13px;height:13px;border-radius:50%;background:var(--pink);box-shadow:0 0 0 5px #ff477e20}
+.car{font-size:2rem;position:relative;animation:drive 4s ease-in-out infinite alternate}
+@keyframes drive{from{transform:translateX(-110px)}to{transform:translateX(110px)}}
+.note{background:#fff0f5;border-radius:18px;padding:18px;text-align:left}
+.small{font:13px Arial,sans-serif;color:#8a4762}
+footer{padding:20px;text-align:center;color:#9a5c74;font:12px Arial,sans-serif}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="card">
+    <div class="eyebrow">A little surprise, made just for you</div>
+    <div class="heart">❤️</div>
+    <h1>Happy Birthday,<br>My Babe!</h1>
+    <p>29 October 🎂</p>
+    <div class="countdown" aria-live="polite"><strong id="days">15</strong><span id="daysLabel">days left until your birthday 🥹❤️</span></div>
+    <p>Counting down to the day the world got my favourite person. One scan, one little page, and all the love I sometimes can't fit into words. 💌</p>
+    <button id="openBtn">Open your surprise 💌</button>
+    <div id="surprise" class="hidden">
+      <div class="section">
+        <div class="eyebrow">Your birthday letter</div>
+        <h2>To my favourite person 🫶🏻</h2>
+        <div class="note">
+          <p>Happy Birthday, babe. ❤️🥹</p>
+          <p>Babe, if I could give you one thing in this world, it would be the chance to see yourself through my eyes for just a minute. Maybe then you'd understand why you mean so much to me, why your smile can make my day feel lighter, and why even the smallest moments with you become memories I want to keep forever. ❤️</p>
+          <p>You are not important to me only on the good days. I care about the tired you, the quiet you, the overthinking you, the version of you that doesn't always know what to say, and the version that keeps trying even when life feels heavy. You don't have to be strong every second or have everything figured out to deserve love. You deserve gentleness, patience, peace, and someone who listens to your heart. 🫂</p>
+          <p>Sometimes I wish I could pause time during our happiest little moments and keep them safe forever. The conversations, the random laughter, the silly jokes, the comfort of talking to you, and all those ordinary seconds that become special because they belong to us. I hope one day we'll look back at these days and smile at how much we grew, learned, and made it through together. 💗</p>
+          <p>I can't promise that life will always be easy, but I can promise to keep showing up with honesty, care, and effort. I want to cheer for your dreams, celebrate every little win, remind you of your worth when you forget it, and build more beautiful memories with you—one day at a time. You never have to earn the right to be cared for, babe. You already matter.</p>
+          <p>As your birthday comes closer, my wish isn't just that you get gifts or have a perfect day. I wish for your heart to feel lighter, for your mind to find peace, for your efforts to turn into something you're proud of, and for life to surprise you with reasons to smile when you least expect them. May this new year bring you the happiness you give to the people around you. 🥹✨</p>
+          <p>If this little page could hug you, it would hold you for a long moment and remind you: you are loved, you are appreciated, and you are worth celebrating—not just on 29 October, but on all the ordinary days after it, too.</p>
+          <p><strong>Happy Birthday in advance, my babe. I am so grateful that you exist, and I hope this new chapter is kinder, brighter, and full of moments that make your heart genuinely happy. I love you more than this little page can ever explain. ❤️🎂</strong></p>
+          <p>Forever cheering for you,<br><strong>Your favourite person 💋</strong></p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="eyebrow">Memory lane</div>
+        <h2>Our little moments ✨</h2>
+        <p>Some memories are photographs, but some live only in the heart: a conversation that made a hard day easier, a laugh that came out of nowhere, a small check-in that meant more than it seemed, and the comfort of knowing someone cares.</p>
+        <p>Those are the moments I want to keep collecting with you. This page has no photos because I wanted these words to be a little reminder that our story isn't only made of pictures—it's made of the feelings, effort, laughter, and little details that only we truly understand. And our memory lane is still being written. 💞</p>
+      </div>
+      <div class="section">
+        <div class="eyebrow">For the car lover 🏎️</div>
+        <h2>Life in the fast lane!</h2>
+        <div class="car">🏎️💨</div>
+        <div class="track"></div>
+        <p>May your next lap around the sun be full of exciting adventures, big wins, and little joys. May every dream get a green light—and may your Hot Wheels collection keep getting cooler! 🏁❤️</p>
+      </div>
+      <div class="section">
+        <div class="heart">🎁</div>
+        <h2>Your birthday wish</h2>
+        <p>Close your eyes, make a wish, and remember: someone out here is genuinely rooting for your happiness. Happy 29 October, babe. May this be a beautiful chapter for you. 💖</p>
+        <button id="wishBtn">Tap for one more wish ✨</button>
+        <p id="wish" class="hidden"><strong>Green lights, happy days, dreams coming true—and lots of love waiting at every finish line. 🏁❤️</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>Made with love, just for you · 29 October ❤️</footer>
+<script>
+function updateBirthdayCountdown(){
+  const now = new Date();
+  let birthday = new Date(now.getFullYear(), 9, 29, 0, 0, 0);
+  if (now > new Date(now.getFullYear(), 9, 29, 23, 59, 59)) birthday = new Date(now.getFullYear()+1, 9, 29, 0, 0, 0);
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const target = new Date(birthday.getFullYear(), birthday.getMonth(), birthday.getDate());
+  const left = Math.max(0, Math.round((target-today)/86400000));
+  document.getElementById('days').textContent = left;
+  document.getElementById('daysLabel').textContent = left === 0 ? "it's your birthday! 🎂❤️" : (left === 1 ? "day left until your birthday 🥹❤️" : "days left until your birthday 🥹❤️");
+}
+updateBirthdayCountdown();
+document.getElementById('openBtn').addEventListener('click',function(){
+  document.getElementById('surprise').classList.remove('hidden');
+  this.textContent='Your surprise is open ❤️';
+  this.disabled=true;
+  document.getElementById('surprise').scrollIntoView({behavior:'smooth',block:'start'});
+});
+document.getElementById('wishBtn').addEventListener('click',function(){
+  document.getElementById('wish').classList.remove('hidden');
+  this.textContent='Wish unlocked 🏁';
+});
+for(let i=0;i<14;i++){
+  const s=document.createElement('div');s.className='spark';
+  s.textContent=['♡','✦','♥','✨'][i%4];
+  s.style.left=(Math.random()*100)+'%';
+  s.style.animationDelay=(Math.random()*7)+'s';
+  s.style.animationDuration=(5+Math.random()*7)+'s';
+  s.style.fontSize=(14+Math.random()*18)+'px';
+  s.style.color=['#ff477e','#d94d80','#e5a52c'][i%3];
+  document.body.appendChild(s);
+}
+</script>
+</body>
+</html>
